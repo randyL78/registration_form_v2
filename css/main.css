@@ -1,1 +1,114 @@
 /* layout type independent styles */
+
+@import url('https://fonts.googleapis.com/css?family=Anton');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #cff3ef;
+}
+
+/* base styles */
+h2, h3, h4, legend {
+  font-family: 'Anton', sans-serif;
+}
+
+h3, p, label, select, input {
+  color: dimgrey;
+  font-size: 1em;
+}
+
+/* header style */
+header {
+  background-color: #343454;
+  height: 5em;
+}
+
+header h1 {
+  color: aliceblue;
+  text-align: center;
+  line-height: 2.5em;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+/* form and field styles */
+form h2, form p {
+  text-align: center;
+}
+
+fieldset {
+  border: none;
+  margin: 10px auto;
+  padding: 0;
+  width: 94%;
+}
+
+label {
+  margin-top: 1.25em;
+}
+
+.contact input, .contact label, .contact select, textarea, button {
+  display: block;
+  width: 100%;
+  outline: none;
+  padding-left: .6em;
+}
+
+.contact input, select, textarea {
+  box-shadow: inset 1px 3px .6em 0 #343454;
+  margin-top: .6em;
+  border-radius: 5px;
+  background-color: #f3f3f3;
+  border-top: 2px solid #aaa;
+  border-right: 2px solid #ddd;
+  border-bottom: 2px solid #ddd;
+  border-left: 2px solid #aaa;
+  line-height: 3em;
+  transition: border-color .4s ease-in;
+}
+
+.contact input:focus {
+  border-color: #343454;
+}
+
+input::placeholder {
+  text-align: right;
+  padding-right: .6em;
+  font-style: italic;
+  color: #ccc;
+}
+
+select {
+  height: 3em;
+}
+
+#zipcode {
+  width: 40%;
+}
+
+.area-label {
+  display: block;
+}
+
+#btnSignUp {
+  width: 94%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: .5em 0;
+  background-color: #66cdc4;
+  transition: background-color .4s ease-in;
+  color: aliceblue;
+}
+
+#btnSignUp:hover {
+  background-color: darkcyan;
+}
+
+
+/* footer styles */
+footer {
+  text-align: center;
+}

@@ -10,9 +10,9 @@
     <!-- required for mobile first approach -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- css reset file -->
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <!-- main styles -->
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="css/main.css">
 
     <!-- layout dependent styles, uncomment layout to view, comment out others -->
 
@@ -25,12 +25,12 @@
     <form action="index.html" method="GET" >
       <h2>Signup for our Newsletter</h2>
       <p>Get the latest news on how your code is doing right in your inbox</p>
-      <fieldset>
+      <fieldset class="contact">
         <!-- Contact section -->
         <legend>Contact Information</legend>
         <!-- container class for flex container and other main layout methods -->
         <div class="container">
-          
+
           <label for="name">Full Name</label>
           <input  id="name" type="text" placeholder="Required" required />
 
@@ -46,7 +46,7 @@
           <label for="city">City</label>
           <input type="text" name="city" id="city" placeholder="Any City">
 
-          <label for="state">state</label>
+          <label for="state">State</label>
           <select name="state" id="state">
             <!-- default option acts as a placeholder -->
             <option value="" disabled selected >Choose State</option>
@@ -119,7 +119,7 @@
           <input type="text" name="zipcode" id="zipcode" placeholder="12345-0000">
         </div>
       </fieldset>
-      <fieldset>
+      <fieldset class="newsletter">
         <!-- Newsletter section -->
         <legend>Newsletter</legend>
         <!-- container class for flex container and other main layout methods -->
@@ -145,12 +145,12 @@
           <input type="radio" name="newsletterFormat" id="plainFormat">
           <label for="plainFormat">Plain text</label>
 
-          <label for="topics">Other topics you'd like to hear about</label>
+          <label for="topics" class="area-label" >Other topics you'd like to hear about</label>
           <textarea name="topics" id="topics"></textarea>
 
         </div>
       </fieldset>
-      <button>Sign Up</button>
+      <button id="btnSignUp" >Sign Up</button>
     </form>
     <footer>
       <p>&copy;2018 The Code Review</p>
