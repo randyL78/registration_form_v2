@@ -1,16 +1,27 @@
 <!DOCTYPE html>
+ <!-- always include a language attribute -->
  <html lang="en" > 
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- sets text in browser tab -->
     <title>Code Review - Registration</title>
     <meta name="description" content="">
+    <!-- required for mobile first approach -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- css reset file -->
+
+    <!-- main styles -->
+    <link rel="stylesheet" href="/css/main.css">
+
+    <!-- layout dependent styles, uncomment layout to view, comment out others -->
+
   </head>
   <body>
     <header>
       <h1>The Code Review</h1>
     </header>
+    <!-- ensure single form tag envelopes all fields -->
     <form action="index.html" method="GET" >
       <h2>Signup for our Newsletter</h2>
       <p>Get the latest news on how your code is doing right in your inbox</p>
@@ -19,6 +30,7 @@
         <legend>Contact Information</legend>
         <!-- container class for flex container and other main layout methods -->
         <div class="container">
+          
           <label for="name">Full Name</label>
           <input  id="name" type="text" placeholder="Required" required />
 
